@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Изменения курсов валют стран{% endblock %}
+
+{% block header %}Выберите страны и диапазон дат{% endblock %}
+
+{% block content %}
+    <form method="POST" id="relative-changes-form">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="countries" class="form-label">Выберите страны</label>
+            <select class="form-select" id="countries" name="countries" multiple required>
+                {% for country in countries %}
+                    <option value="{{ country.name }}">{{ country.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <h2>Выберите период</h2>
+        {{ form }}
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if plot_url %}
+        <div>
+            <img src="{{ plot_url }}" alt="Currency Rate Plot">
+        </div>
+    {% endif %}
+{% endblock %}
