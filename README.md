@@ -70,3 +70,4 @@ This project is a web application that allows users to track and visualize relat
 - **`main/utils/SyncDB.py`**: Contains logic for calculating relative currency changes.
 - **`main/utils/CurrencyPlot.py`**: Handles the creation and encoding of plots for visualizing relative changes in currency rates using Matplotlib and Pandas.
 - **`main/templates/`**: HTML templates for the web interface.
+![download](https://github.com/user-attachments/assets/b42590ed-cb35-445b-981b-1d9686c86dca)
