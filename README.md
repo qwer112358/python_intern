@@ -30,7 +30,7 @@ This project is a web application that allows users to track and visualize relat
 
     ```bash
     git clone https://github.com/qwer112358/python_intern.git
-    cd currency-tracker
+    cd currencyProject
     ```
 
 2. **Set up the Virtual Environment:**
@@ -64,10 +64,9 @@ This project is a web application that allows users to track and visualize relat
 
 ## Structure
 
-- **`main.py`**: Entry point of the application.
-- **`models.py`**: Contains the database models for storing currency and country data.
-- **`views.py`**: Handles web requests and responses, rendering HTML templates.
-- **`utils/scraper.py`**: Contains classes and methods for fetching and processing data from external sources.
-- **`utils/SyncDB.py`**: Contains logic for calculating relative currency changes.
-- **`utils/CurrencyPlot.py`**: Handles the creation and encoding of plots for visualizing relative changes in currency rates using Matplotlib and Pandas.
-- **`templates/`**: HTML templates for the web interface.
+- **`main/models.py`**: Contains the database models for storing currency and country data.
+- **`main/views.py`**: Handles web requests and responses, rendering HTML templates.
+- **`main/utils/scraper.py`**: Contains classes and methods for fetching and processing data from external sources.
+- **`main/utils/SyncDB.py`**: Contains logic for calculating relative currency changes.
+- **`main/utils/CurrencyPlot.py`**: Handles the creation and encoding of plots for visualizing relative changes in currency rates using Matplotlib and Pandas.
+- **`main/templates/`**: HTML templates for the web interface.
